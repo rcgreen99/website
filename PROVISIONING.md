@@ -46,3 +46,25 @@ exit
 # log in
 ssh website
 ```
+
+## Setup Firewall
+
+```sh
+# enable firewall logging (ufw => UncomplicatedFirewall)
+sudo ufw logging on
+
+# disable all ports except 22, 80, 443
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+
+# enable firewall
+sudo ufw enable
+sudo ufw status
+```
+
+## Disable Root Login
+
+```sh
+sudo vi /etc/ssh/sshd_config
+```
