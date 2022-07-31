@@ -4,7 +4,7 @@
 
 ```sh
 # login to host w/o config
-ssh -i ~/.ssh/digitalocean_rsa root@164.92.101.19
+ssh -i ~/.ssh/digitalocean_rsa root@164.92.101.129
 ```
 
 ```sh
@@ -73,4 +73,11 @@ sudo ufw status
 
 ```sh
 sudo vi /etc/ssh/sshd_config
+```
+
+## Git/ssh
+
+```sh
+# add github key to ssh agent (do this on local machine)
+ssh-add --apple-use-keychain ~/.ssh/github_rsa
 ```
