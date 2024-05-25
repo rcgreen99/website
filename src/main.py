@@ -21,6 +21,6 @@ async def blog(request: Request):
     return templates.TemplateResponse("blog.html", {"request": request})
 
 
-@app.get("/work")
-async def work(request: Request):
-    return templates.TemplateResponse("work.html", {"request": request})
+# @app.get("/work")
+# async def work(request: Request):
+#     return templates.TemplateResponse("work.html", {"request": request})

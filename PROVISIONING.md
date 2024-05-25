@@ -4,7 +4,7 @@
 
 ```sh
 # login to host w/o config
-ssh -i ~/.ssh/digitalocean_rsa root@164.92.101.129
+ssh -i ~/.ssh/digitalocean_rsa root@###.###.###.###
 ```
 
 ```sh
