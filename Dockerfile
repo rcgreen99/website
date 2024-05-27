@@ -7,4 +7,9 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . .
 
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
+RUN mkdir -p /var/sockets
+
+EXPOSE 8000
+
+CMD ["uvicorn", "src.main:web_app", "--host", "0.0.0.0", "--port", "8000", "--reload", "--uds", "/var/sockets/uvicorn.sock"]
+
