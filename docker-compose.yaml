@@ -9,6 +9,7 @@ services:
       - "8000:8000"
     volumes:
       - .:/workspace
+      - /var/sockets:/var/sockets
 
   nginx:
     image: nginx:latest
@@ -19,6 +20,7 @@ services:
       - ./data/nginx:/etc/nginx/conf.d
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
+      - /var/sockets:/var/sockets
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
     depends_on:
       - web_app
