@@ -20,6 +20,9 @@ async def index(request: Request):
 async def blog(request: Request):
     return templates.TemplateResponse("blog.html", {"request": request})
 
+@web_app.get("/blog/reading")
+async def reading(request: Request):
+    return templates.TemplateResponse("blog/reading.html", {"request": request})
 
 # @web_app.get("/work")
 # async def work(request: Request):
