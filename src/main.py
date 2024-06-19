@@ -24,6 +24,10 @@ async def blog(request: Request):
 async def reading(request: Request):
     return templates.TemplateResponse("blog/reading.html", {"request": request})
 
+@web_app.get("/blog/the-great-debate")
+async def the_great_deabate(request: Request):
+    return templates.TemplateResponse("blog/the-great-debate.html", {"request": request})
+
 # @web_app.get("/work")
 # async def work(request: Request):
 #     return templates.TemplateResponse("work.html", {"request": request})
