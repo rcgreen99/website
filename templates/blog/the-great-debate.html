@@ -26,16 +26,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" href="../static/style.css" />
-
-    <title>Reese Green</title>
   </head>
 
   <body>
     <div id="page-container">
       <div id="content-wrap">
-        <!--- Header -->
-        {% include "header.html" %}
-
         <div class="container">
           <body>
             <h1>
@@ -48,21 +43,21 @@
               <img
                 src="../static/images/ilya-chollet.jpg"
                 alt="Ilya vs Chollet"
-                class="img-fluid"
+                class="img-fluid rounded"
               />
             </div>
             <br />
             <p>
-              Two of the most influential figures in AI completely disagree on
-              the path to AGI. Ilya Sutskever, former Chief Scientist of OpenAI
+              Two of the most influential figures in AI fundamentally disagree
+              on the path to AGI. Ilya Sutskever, former Chief Scientist of
+              OpenAI
               <a
                 href="https://www.bloomberg.com/news/articles/2024-06-19/openai-co-founder-plans-new-ai-focused-research-lab?srnd=all"
                 >and now Chief Scientist at Safe Superintelligence</a
               >
-              seems to think that it will be possible to simply keep scaling up
-              the size of LLM's and their training data, and that will get us
-              nearly all the way there. On the other hand, François Chollet,
-              creator of Keras, thinks that LLM's alone aren't enough.
+              thinks that if we keep scaling up LLM's, we'll be very close to
+              achieving AGI. On the other hand, François Chollet, creator of
+              Keras, thinks that LLM's alone aren't enough.
             </p>
 
             <p>
@@ -85,15 +80,18 @@
               human performance". He argues against the premise that LLM's just
               learn to imitate, giving a straightforward counter argument.
             </p>
-
-            <blockquote>
-              <p>
-                "If your base neural net is smart enough. You just ask it — What
-                would a person with great insight, wisdom, and capability do?
-                Maybe such a person doesn't exist, but there's a pretty good
-                chance the neural net would be able to extrapolate how such a
-                person would behave."
-              </p>
+            <!-- <blockquote class="blockquote">
+              <p class="mb-0">This is a quoted text.</p>
+              <footer class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </footer>
+            </blockquote> -->
+            <blockquote class="blockquote">
+              "If your base neural net is smart enough. You just ask it — What
+              would a person with great insight, wisdom, and capability do?
+              Maybe such a person doesn't exist, but there's a pretty good
+              chance the neural net would be able to extrapolate how such a
+              person would behave."
             </blockquote>
 
             <p>
@@ -135,7 +133,7 @@
               this topic.
             </p>
 
-            <blockquote>
+            <blockquote class="blockquote">
               "If you scale up your database, and you keep adding to it more
               knowledge, more program templates then sure it becomes more and
               more skillful. You can apply it to more and more tasks. But
@@ -180,10 +178,10 @@
             <br />
 
             <p>
-              If you haven't already, I highly recommend listening to both.
-              Here's the
-              <a href="https://www.youtube.com/watch?v=3vH1v6g1J6k"
-                >link to Ilya's interview
+              If you haven't already, I highly recommend listening to both
+              podcasts. Here's the
+              <a href="https://www.youtube.com/watch?v=Yf1o0TQzry8"
+                >link to Ilya's
               </a>
               and here's a
               <a href="https://www.youtube.com/watch?v=UakqL6Pj9xo"
@@ -194,8 +192,5 @@
         </div>
       </div>
     </div>
-
-    <!-- Footer -->
-    {% include "footer.html" %}
   </body>
 </html>
