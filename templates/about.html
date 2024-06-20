@@ -34,12 +34,64 @@
     <div id="page-container">
       <div id="content-wrap">
         {% include "header.html" %}
-        <div class="basic">
-          {% include "blog/the-great-debate-content.html" %}
-        </div>
-        <hr />
 
-        <div class="basic">{% include "blog/reading-content.html" %}</div>
+        <!-- Pic and about me -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div style="text-align: center">
+                <img
+                  src="static/images/face.png"
+                  class="rounded-circle"
+                  alt="Reese"
+                  width="160"
+                  height="160"
+                />
+              </div>
+              <div></div>
+              <h5 style="text-align: center">
+                <a
+                  class="bi-linkedin"
+                  href="https://www.linkedin.com/in/reese-green-589031183/"
+                ></a>
+                &nbsp
+                <a class="bi-envelope" href="mailto: rcgreen99@gmail.com"></a>
+                &nbsp
+                <a class="bi-github" href="https://github.com/rcgreen99"></a>
+              </h5>
+            </div>
+            <div class="col-md-8">
+              <p id="aboutme">
+                Machine Learning Engineer at mbue, living in Austin, TX
+                <br />
+                <br />
+                Passionate about AI and Deep Learning. Feel free to reach out to
+                me! I like meeting new people and learning new things.
+              </p>
+            </div>
+          </div>
+          <!-- end of row -->
+          <hr />
+        </div>
+        <!-- end of container -->
+
+        <div class="container">
+          <h5>Education</h5>
+          <ul>
+            <li>
+              <a href="../static/images/cs_diploma.png"
+                >BS Computer Science at University of Colorado at Boulder
+                (2022)</a
+              >
+            </li>
+            <li>
+              <a href="../static/images/appm_diploma.png"
+                >BS Applied Mathematics at University of Colorado at Boulder
+                (2021)</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
