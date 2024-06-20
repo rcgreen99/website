@@ -25,6 +25,12 @@ a {
   padding-bottom: 2.5rem;    /* Footer height */
 }
 
+.blog-container {
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 #footer {
   
   position: absolute;
@@ -48,4 +54,36 @@ a {
 body {
   max-width: 900px;
   margin: 0 auto;
+  font-family: 'Georgia', serif;
+
+}
+
+blockquote {
+  border-left: 4px solid #ccc;
+  padding: 10px 20px;
+  margin: 20px 0;
+  background-color: #f1f1f1;
+  font-style: italic;
+  color: #555;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote::before {
+  content: '“';
+  font-size: 2em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  color: #ccc;
+  margin-right: 0.25em;
+}
+
+.dots {
+  content: '...';
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  color: #555;
 }
