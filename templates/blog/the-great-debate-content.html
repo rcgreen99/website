@@ -1,240 +1,228 @@
-<div id="page-container">
-  <div id="content-wrap">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <div class="blog-container">
-            <h1>
-              The Great Debate: Sutskever vs. Chollet on the Future of AGI
-            </h1>
-            <i>June 19, 2024</i>
-            <br />
-            <br />
-            <div class="text-center">
-              <img
-                src="../static/images/ilya-chollet.jpg"
-                alt="Ilya vs Chollet"
-                class="img-fluid rounded"
-              />
-            </div>
-            <br />
-            <h2>Are LLM's a Pathway to AGI?</h2>
-            <p>
-              Two of the most influential figures in AI fundamentally disagree
-              on how we're going to achieve AGI. Ilya Sutskever, former Chief
-              Scientist of OpenAI
-              <a
-                href="https://www.bloomberg.com/news/articles/2024-06-19/openai-co-founder-plans-new-ai-focused-research-lab?srnd=all"
-                >and now Chief Scientist at Safe Superintelligence</a
-              >
-              thinks that if we keep scaling up LLM's, we'll eventually get
-              there. On the other hand, François Chollet, creator of Keras,
-              thinks that LLM's alone aren't enough.
-            </p>
-
-            <p>
-              Both Sutskever and Chollet have gone on
-              <a href="https://www.youtube.com/@DwarkeshPatel"
-                >Dwarkesh Patel's podcast</a
-              >, where they've discussed their views on LLM's and AGI. It should
-              be noted that Ilya's interview took place over a year ago, while
-              François's interview occurred only a few days ago. So, it's
-              possible that Ilya's views have changed in the past year. However,
-              it's clear that Ilya is more bullish on LLM's than Chollet, so the
-              majority (if not all) of his opinions probably still stand.
-            </p>
-
-            <h2>Sutskever's Interview</h2>
-            <p>
-              Early in the interview, Dwarkesh asks Ilya, "What would it take to
-              surpass human performance?" Right off the bat, Ilya "challenges
-              the claim that next-token prediction is not enough to surpass
-              human performance". He argues against the premise that LLM's just
-              learn to imitate, giving a straightforward counter argument.
-            </p>
-
-            <blockquote>
-              If your base neural net is smart enough. You just ask it — What
-              would a person with great insight, wisdom, and capability do?
-              <b
-                >Maybe such a person doesn't exist, but there's a pretty good
-                chance the neural net would be able to extrapolate how such a
-                person would behave.</b
-              >
-            </blockquote>
-
-            <p>
-              Ilya seems to believe that LLM's are so good at generalization
-              that they might even extrapolate the behavior of a "super" person
-              that doesn't actually exist. Before ChatGPT was revealed to the
-              world, almost nobody would have believed such a claim. But now,
-              there seems to be a large number of people both inside and outside
-              the Machine Learning community that believe LLM's can generalize
-              well beyond their data. He goes on to discuss the implications of
-              next-token prediction's success.
-            </p>
-
-            <blockquote>
-              ...what does it mean to predict the next token well enough? It's
-              actually a deeper question than it seems. Predicting the next
-              token well means that you
-              <b
-                >understand the underlying reality that led to the creation of
-                that token.</b
-              >
-            </blockquote>
-
-            <p>
-              While Ilya doesn't explicitly define "understanding" in this
-              context, it certainly sounds like he thinks LLM's are capable of
-              much more more than just memorization. Ilya expands on the this
-              idea:
-            </p>
-
-            <blockquote>
-              It's not statistics. Like, it is statistics, but what is
-              statistics? In order to understand those statistics to compress
-              them, you need to understand what is it about the world that
-              creates this set of statistics?
-            </blockquote>
-
-            <p>
-              Here, I believe Sutskever is arguing that the only way an LLM
-              could be so good at predicting the next token is by actually
-              compressing the data in a way that reflects the underlying reality
-              of the world. Essentially, he's saying that while LLM's are
-              <i>just statistics</i>, that doesn't actually mean that they have
-              no understanding. In fact, Sutskever seems to think that the only
-              way to be so proficient at next-token prediction is to have a deep
-              understanding of the world.
-            </p>
-
-            <p>
-              I find this argument compelling, but I think it still an open
-              question how much "understanding" is really going on versus how
-              much memorization is involved.
-            </p>
-
-            <h2>Chollet's Interview</h2>
-
-            <p>
-              While Ilya touched on LLM's relation to AGI in his interview, the
-              majority of François Chollet's interview seemed to revolve around
-              the topic. Within the first couple of minutes, Chollet explains
-              how he believes LLM's function.
-            </p>
-
-            <blockquote>
-              If you look at the way LLMs work is that they're basically this
-              big <b>interpretive memory.</b> The way you scale up their
-              capabilities is by trying to
-              <b>cram as much knowledge and patterns as possible into them.</b>
-            </blockquote>
-
-            <p>
-              While this statement doesn't <em>directly</em> contradict Ilya's
-              claims, it's clear that Chollet is less impressed by LLM's ability
-              to generalize. Later in the interview, he goes into more depth on
-              this topic.
-            </p>
-
-            <blockquote>
-              If you <b>scale up your database</b>, and you keep adding to it
-              more knowledge, more program templates
-              <b>then sure it becomes more and more skillful</b>. You can apply
-              it to more and more tasks.
-              <b
-                >But general intelligence is not task specific skills scaled up
-                to many skills,</b
-              >
-              because there is an infinite space of possible skills.
-            </blockquote>
-
-            <p>
-              Now <i>this</i> directly contradicts Ilya's claim that LLM's can
-              extrapolate the behavior of a "super" person. Chollet continues by
-              explaining what general intelligence <i>actually</i> is.
-            </p>
-
-            <blockquote>
-              General intelligence is the ability to approach any problem, any
-              skill, and very quickly master it using very little data. This is
-              what makes you able to face anything you might ever encounter.
-              This is the definition of generality. Generality is not
-              specificity scaled up. It is the ability to apply your mind to
-              anything at all, to arbitrary things. This fundamentally requires
-              the ability to adapt, to learn on the fly efficiently."
-            </blockquote>
-
-            <p>
-              Chollet argues that general intelligence cannot be achieved merely
-              by scaling up models or training data. He explains that more data
-              increases a model's "skill" but does not bestow general
-              intelligence. I love the way he succintly summarizes this:
-              "Generality is not specificity scale up."
-            </p>
-
-            <p>
-              Throughout the podcast, Chollet carefully explains why he thinks
-              LLM's lack understanding and are really just "memorizers." He goes
-              so far as to say that LLM's lack intelligence altogether.
-              Personally, I think this is very much dependent on your definiton
-              of intelligence, but his point is well taken.
-            </p>
-
-            <p>
-              To aid in the search for general intelligence, Chollet created
-              <a href="https://lab42.global/arc/">the ARC challenge</a>, a test
-              he believes can only be fairly completed by using general
-              intelligence. He notes that an LLM or other model could be trained
-              on many millions of ARC-like problems, and that it might be able
-              to beat ARC, but that it would be "cheating" in a sense. He argues
-              that the model would not actually be learning to generalize, but
-              rather memorizing the answers to the ARC problems.
-            </p>
-
-            <p>
-              Interestingly, the state-of-the-art model on the ARC challenge
-              does in fact use an LLM, but it adds quite a bit of extra
-              machinery to the model to help it generalize. In the podcast,
-              Chollet explains how he expects an LLM to be part of the final
-              solution to AGI, but that it will need to be combined with other
-              techniques to achieve general intelligence.
-            </p>
-
-            <h2>Conclusion</h2>
-            <p>
-              While Sutskever seems to think AGI is mostly a matter of scaling
-              up LLM's, Chollet seems unconvinced. It's evident that even top AI
-              researchers cannot agree on the correct path to AGI.
-            </p>
-
-            <p>
-              Estimates for achieving AGI vary widely, from a few years to
-              several decades. Chollet even suggests that LLMs have
-              <em>slowed down</em> progress towards AGI, stating, "OpenAI
-              basically set back progress towards AGI by quite a few years,
-              probably like 5-10 years." Only time will reveal whose perspective
-              is closer to the truth.
-            </p>
-
-            <div class="dots">...</div>
-            <br />
-
-            <p>
-              If you haven't already, I highly recommend listening to both
-              podcasts. Here's the
-              <a href="https://www.youtube.com/watch?v=Yf1o0TQzry8"
-                >link to Ilya's
-              </a>
-              and here's a
-              <a href="https://www.youtube.com/watch?v=UakqL6Pj9xo"
-                >link to François's.</a
-              >
-            </p>
-          </div>
-        </div>
+<div class="row justify-content-center">
+  <div class="col-md-10">
+    <div class="blog-container">
+      <h1>The Great Debate: Sutskever vs. Chollet on the Future of AGI</h1>
+      <i>June 19, 2024</i>
+      <br />
+      <br />
+      <div class="text-center">
+        <img
+          src="../static/images/ilya-chollet.jpg"
+          alt="Ilya vs Chollet"
+          class="img-fluid rounded"
+        />
       </div>
+      <br />
+      <h2>Are LLM's a Pathway to AGI?</h2>
+      <p>
+        Two of the most influential figures in AI fundamentally disagree on how
+        we're going to achieve AGI. Ilya Sutskever, former Chief Scientist of
+        OpenAI
+        <a
+          href="https://www.bloomberg.com/news/articles/2024-06-19/openai-co-founder-plans-new-ai-focused-research-lab?srnd=all"
+          >and now Chief Scientist at Safe Superintelligence</a
+        >
+        thinks that if we keep scaling up LLM's, we'll eventually get there. On
+        the other hand, François Chollet, creator of Keras, thinks that LLM's
+        alone aren't enough.
+      </p>
+
+      <p>
+        Both Sutskever and Chollet have gone on
+        <a href="https://www.youtube.com/@DwarkeshPatel"
+          >Dwarkesh Patel's podcast</a
+        >, where they've discussed their views on LLM's and AGI. It should be
+        noted that Ilya's interview took place over a year ago, while François's
+        interview occurred only a few days ago. So, it's possible that Ilya's
+        views have changed in the past year. However, it's clear that Ilya is
+        more bullish on LLM's than Chollet, so the majority (if not all) of his
+        opinions probably still stand.
+      </p>
+
+      <h2>Sutskever's Interview</h2>
+      <p>
+        Early in the interview, Dwarkesh asks Ilya, "What would it take to
+        surpass human performance?" Right off the bat, Ilya "challenges the
+        claim that next-token prediction is not enough to surpass human
+        performance". He argues against the premise that LLM's just learn to
+        imitate, giving a straightforward counter argument.
+      </p>
+
+      <blockquote>
+        If your base neural net is smart enough. You just ask it — What would a
+        person with great insight, wisdom, and capability do?
+        <b
+          >Maybe such a person doesn't exist, but there's a pretty good chance
+          the neural net would be able to extrapolate how such a person would
+          behave.</b
+        >
+      </blockquote>
+
+      <p>
+        Ilya seems to believe that LLM's are so good at generalization that they
+        might even extrapolate the behavior of a "super" person that doesn't
+        actually exist. Before ChatGPT was revealed to the world, almost nobody
+        would have believed such a claim. But now, there seems to be a large
+        number of people both inside and outside the Machine Learning community
+        that believe LLM's can generalize well beyond their data. He goes on to
+        discuss the implications of next-token prediction's success.
+      </p>
+
+      <blockquote>
+        ...what does it mean to predict the next token well enough? It's
+        actually a deeper question than it seems. Predicting the next token well
+        means that you
+        <b
+          >understand the underlying reality that led to the creation of that
+          token.</b
+        >
+      </blockquote>
+
+      <p>
+        While Ilya doesn't explicitly define "understanding" in this context, it
+        certainly sounds like he thinks LLM's are capable of much more more than
+        just memorization. Ilya expands on the this idea:
+      </p>
+
+      <blockquote>
+        It's not statistics. Like, it is statistics, but what is statistics? In
+        order to understand those statistics to compress them, you need to
+        understand what is it about the world that creates this set of
+        statistics?
+      </blockquote>
+
+      <p>
+        Here, I believe Sutskever is arguing that the only way an LLM could be
+        so good at predicting the next token is by actually compressing the data
+        in a way that reflects the underlying reality of the world. Essentially,
+        he's saying that while LLM's are
+        <i>just statistics</i>, that doesn't actually mean that they have no
+        understanding. In fact, Sutskever seems to think that the only way to be
+        so proficient at next-token prediction is to have a deep understanding
+        of the world.
+      </p>
+
+      <p>
+        I find this argument compelling, but I think it still an open question
+        how much "understanding" is really going on versus how much memorization
+        is involved.
+      </p>
+
+      <h2>Chollet's Interview</h2>
+
+      <p>
+        While Ilya touched on LLM's relation to AGI in his interview, the
+        majority of François Chollet's interview seemed to revolve around the
+        topic. Within the first couple of minutes, Chollet explains how he
+        believes LLM's function.
+      </p>
+
+      <blockquote>
+        If you look at the way LLMs work is that they're basically this big
+        <b>interpretive memory.</b> The way you scale up their capabilities is
+        by trying to
+        <b>cram as much knowledge and patterns as possible into them.</b>
+      </blockquote>
+
+      <p>
+        While this statement doesn't <em>directly</em> contradict Ilya's claims,
+        it's clear that Chollet is less impressed by LLM's ability to
+        generalize. Later in the interview, he goes into more depth on this
+        topic.
+      </p>
+
+      <blockquote>
+        If you <b>scale up your database</b>, and you keep adding to it more
+        knowledge, more program templates
+        <b>then sure it becomes more and more skillful</b>. You can apply it to
+        more and more tasks.
+        <b
+          >But general intelligence is not task specific skills scaled up to
+          many skills,</b
+        >
+        because there is an infinite space of possible skills.
+      </blockquote>
+
+      <p>
+        Now <i>this</i> directly contradicts Ilya's claim that LLM's can
+        extrapolate the behavior of a "super" person. Chollet continues by
+        explaining what general intelligence <i>actually</i> is.
+      </p>
+
+      <blockquote>
+        General intelligence is the ability to approach any problem, any skill,
+        and very quickly master it using very little data. This is what makes
+        you able to face anything you might ever encounter. This is the
+        definition of generality. Generality is not specificity scaled up. It is
+        the ability to apply your mind to anything at all, to arbitrary things.
+        This fundamentally requires the ability to adapt, to learn on the fly
+        efficiently."
+      </blockquote>
+
+      <p>
+        Chollet argues that general intelligence cannot be achieved merely by
+        scaling up models or training data. He explains that more data increases
+        a model's "skill" but does not bestow general intelligence. I love the
+        way he succintly summarizes this: "Generality is not specificity scale
+        up."
+      </p>
+
+      <p>
+        Throughout the podcast, Chollet carefully explains why he thinks LLM's
+        lack understanding and are really just "memorizers." He goes so far as
+        to say that LLM's lack intelligence altogether. Personally, I think this
+        is very much dependent on your definiton of intelligence, but his point
+        is well taken.
+      </p>
+
+      <p>
+        To aid in the search for general intelligence, Chollet created
+        <a href="https://lab42.global/arc/">the ARC challenge</a>, a test he
+        believes can only be fairly completed by using general intelligence. He
+        notes that an LLM or other model could be trained on many millions of
+        ARC-like problems, and that it might be able to beat ARC, but that it
+        would be "cheating" in a sense. He argues that the model would not
+        actually be learning to generalize, but rather memorizing the answers to
+        the ARC problems.
+      </p>
+
+      <p>
+        Interestingly, the state-of-the-art model on the ARC challenge does in
+        fact use an LLM, but it adds quite a bit of extra machinery to the model
+        to help it generalize. In the podcast, Chollet explains how he expects
+        an LLM to be part of the final solution to AGI, but that it will need to
+        be combined with other techniques to achieve general intelligence.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p>
+        While Sutskever seems to think AGI is mostly a matter of scaling up
+        LLM's, Chollet seems unconvinced. It's evident that even top AI
+        researchers cannot agree on the correct path to AGI.
+      </p>
+
+      <p>
+        Estimates for achieving AGI vary widely, from a few years to several
+        decades. Chollet even suggests that LLMs have
+        <em>slowed down</em> progress towards AGI, stating, "OpenAI basically
+        set back progress towards AGI by quite a few years, probably like 5-10
+        years." Only time will reveal whose perspective is closer to the truth.
+      </p>
+
+      <div class="dots">...</div>
+      <br />
+
+      <p>
+        If you haven't already, I highly recommend listening to both podcasts.
+        Here's the
+        <a href="https://www.youtube.com/watch?v=Yf1o0TQzry8"
+          >link to Ilya's
+        </a>
+        and here's a
+        <a href="https://www.youtube.com/watch?v=UakqL6Pj9xo"
+          >link to François's.</a
+        >
+      </p>
     </div>
   </div>
 </div>

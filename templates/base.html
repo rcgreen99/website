@@ -33,7 +33,10 @@
     <title>Reese Green</title>
   </head>
   <body>
-    {% include "header.html" %} {% block content %}{% endblock %} {% include
-    "footer.html" %}
+    {% include "header.html" %}
+    <div id="page-container">
+      <div id="content-wrap">{% block content %}{% endblock %}</div>
+    </div>
+    {% include "footer.html" %}
   </body>
 </html>
