@@ -49,6 +49,10 @@ blockquote::before {
   margin-top: 60px;
 }
 
+#blog-date {
+  margin-top: 20px;
+}
+
 #name {
   text-align: left;
   margin-left: 20px;
@@ -59,15 +63,13 @@ blockquote::before {
   font-weight: bold;
   text-decoration: underline;
   color: #212529;
-
 }
 
 #content-wrap {
+  margin: auto;
   padding-bottom: 2.5rem;
-}
+  width: 80%;
 
-#date {
-  margin-top: 20px;
 }
 
 #footer {
