@@ -68,8 +68,7 @@ blockquote::before {
 #content-wrap {
   margin: auto;
   padding-bottom: 2.5rem;
-  width: 80%;
-
+  /* width: 80%; */
 }
 
 #footer {
