@@ -1,45 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
-
-    <!-- Bootstrap core CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="stylesheet" href="../static/style.css" />
-
-    <title>Reese Green</title>
-  </head>
-
-  <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <!--- Header -->
-        {% include "header.html" %}
-
-        {%include "blog/the-great-debate-content.html"%}
-
-      </div>
-    <!-- Footer -->
-    {% include "footer.html" %}
-  </body>
-</html>
+{% extends "base.html" %} {% block content %}
+<div id="page-container">
+  <div id="content-wrap">
+    <div class="basic">{% include "blog/the-great-debate-content.html" %}</div>
+  </div>
+</div>
+{% endblock %}

@@ -3,6 +3,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+
 web_app = FastAPI()
 
 web_app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -10,6 +11,8 @@ web_app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
 
+
+# gets
 
 @web_app.get("/")
 async def index(request: Request):
@@ -31,7 +34,3 @@ async def reading(request: Request):
 @web_app.get("/blog/the-great-debate")
 async def the_great_debate(request: Request):
     return templates.TemplateResponse("blog/the-great-debate.html", {"request": request})
-
-# @web_app.get("/work")
-# async def work(request: Request):
-#     return templates.TemplateResponse("work.html", {"request": request})

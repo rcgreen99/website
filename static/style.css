@@ -64,7 +64,6 @@ blockquote {
   margin: 20px 0;
   background-color: #f1f1f1;
   font-style: italic;
-  font-size: 1.125em;
   color: #555;
 }
 
@@ -80,16 +79,6 @@ blockquote::before {
   color: #ccc;
   margin-right: 0.25em;
 }
-
-/* blockquote::after {
-  content: '”';
-  font-size: 2em;
-  line-height: 0.1em;
-  vertical-align: -0.4em;
-  color: #ccc;
-  margin-left: 0.25em;
-
-} */
 
 .dots {
   content: '...';
